@@ -1,0 +1,966 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timtour</title>
+    <link rel="shortcut icon" type="image/x-icon" href="">
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.1.2/css/all.css">
+    <link rel="stylesheet" href="./assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flatpickr/4.6.13/flatpickr.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" />
+
+    <link rel="stylesheet" href="./assets/flip/flipclock.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/css/select2.min.css" />
+
+    <link rel="stylesheet" href="./assets/css/animation.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="canonical" href="https://wowjs.uk/">
+
+</head>
+
+<body id="">
+    <div class="wrapper">
+        <header class="header">
+            <div class="header-wrap">
+                <div class="container">
+                    <div class="header-top">
+                        <a href="./index.html" class="logo">
+                            <img src="./assets/images/logo.png" alt="">
+                        </a>
+                        <div class="search-top col-6">
+                            <div class="search-top-inner">
+                                <form action="">
+                                    <input type="search" name="search" id="" placeholder="Tìm theo điểm đến hoạt động" class="form-control">
+                                    <button type="submit">
+                                        <img src="./assets/images/logo-search.svg" alt="">
+                                    </button>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="social-top">
+                            <ul>
+                                <li>
+                                    <a href="" class="whatsapp">
+                                        <i class="fa-brands fa-whatsapp"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="" class="facebook">
+                                        <i class="fa-brands fa-facebook-f"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="" class="youtube">
+                                        <i class="fa-brands fa-youtube"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="" class="instagram">
+                                        <i class="fa-brands fa-instagram"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="group-active-mobile">
+                            <div class="search-mobile">
+                                <i class="fa-regular fa-magnifying-glass"></i>
+                            </div>
+                            <div class="toggle-bar">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="header-nav">
+                <div class="container">
+                    <nav>
+                        <ul class="menu">
+                            <li>
+                                <a href="./about.html">Giới thiệu</a>
+                            </li>
+                            <li>
+                                <a href="./lasttour.html">Tour giờ chót</a>
+                            </li>
+                            <li>
+                                <a href="./tours.html">Tour du lịch</a>
+                            </li>
+                            <li>
+                                <a href="./flight.html">Đặt vé máy bay</a>
+                            </li>
+                            <li>
+                                <a href="./yacht.html">Du thuyền</a>
+                            </li>
+                            <li>
+                                <a href="./manual.html">Cẩm nang</a>
+                            </li>
+                            <li>
+                                <a href="./communication.html">Truyền thông</a>
+                            </li>
+                            <li>
+                                <a href="./contact.html">Liên hệ</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </header>
+        <main class="main">
+            <section class="progress-wrap">
+                <div class="container">
+                    <div class="stepper-wrapper">
+                        <div class="stepper-item completed">
+                            <div class="step-counter">1</div>
+                            <div class="step-name">Tự tính tour</div>
+                        </div>
+                        <div class="stepper-item completed">
+                            <div class="step-counter">2</div>
+                            <div class="step-name">Lịch trình tour</div>
+                        </div>
+                        <div class="stepper-item active">
+                            <div class="step-counter">3</div>
+                            <div class="step-name">Thanh toán</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <div class="detail-calculation-tour tb-space">
+                <div class="container">
+                    <h1 class="text-center font-weight-bold title">Lịch trình tour dự kiến</h1>
+                    <div class="row justify-content-center">
+                        <div class="col-md-11 p-0">
+                            <div class="tour-idenerary-list mb-5">
+                                <div class="tour-idenerary-item">
+                                    <div class="accordion-content">
+                                        <div class="accordion-content__title">
+                                            <h2>
+                                                Day1: Di chuyển từ A > B
+                                            </h2>
+                                        </div>
+                                        <div class="accordion-content__desc">
+                                            <ul>
+                                                <li>
+                                                    <h3>Di chuyển từ A > B</h3>
+                                                </li>
+                                                <li>
+                                                    <h3>Lưu trú tại khách sạn:</h3>
+                                                    <br>
+                                                    <div class="hotel-suggest">
+                                                        <div class="hotel-suggest-item">
+                                                            <div class="group-checked">
+                                                                <input type="checkbox" name="" id="hosg1">
+                                                                <label for="hosg1">
+                                                                    <div class="group-checked-info">
+                                                                        <div class="image-box">
+                                                                            <img src="https://cdn.tourradar.com/s3/city/11046/17799271_280.jpg" alt="">
+                                                                        </div>
+                                                                        <div class="desc-box">
+                                                                            <h3 class="desc-box-title">
+                                                                                Khách sạn A
+                                                                            </h3>
+                                                                            <div class="desc-box-location">
+                                                                                <i class="fa-solid fa-location-dot"></i>
+                                                                                12/24 thanh xuân,hà nội
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </label>
+                                                            </div>
+                                                            <div class="hotel-suggest-item-detail">
+                                                                <span class="ar-title">Thông tin hạng phòng</span>
+                                                                <span class="showmore-typeroom active">
+                                                                    <span>Thu gọn</span>
+                                                                <i class="fa-solid fa-triangle"></i>
+                                                                </span>
+                                                            </div>
+                                                            <div class="hotel-suggest-typeroom">
+                                                                <div class="hotel-suggest-typeroom-item">
+                                                                    <h3 class="suggest-typeroom-title">
+                                                                        Second Floor Room Mountain View - Double Room
+                                                                    </h3>
+                                                                    <div class="suggest-typeroom-info">
+                                                                        <div class="image-box">
+                                                                            <img src="https://owa.bestprice.vn/images/hotels/large/vinpearl-resort-spa-phu-quoc-634fc56f63f9a-450x252.jpg" alt="">
+                                                                        </div>
+                                                                        <div class="desc-box">
+                                                                            <h3 class="desc-box-title">
+                                                                                Phòng hạng sang
+                                                                            </h3>
+                                                                            <a href="" class="typeroom-detail">
+                                                                                Chi tiết phòng 
+                                                                                <i class="fa-solid fa-chevron-right"></i>
+                                                                            </a>
+                                                                            <div class="typeroom-detail-meta">
+                                                                                <div class="typeroom-detail-meta-item">
+                                                                                    <i class="fa-solid fa-square"></i> 46m <sup>2</sup>
+                                                                                </div>
+                                                                                <div class="typeroom-detail-meta-item">
+                                                                                    <i class="fa-solid fa-user"></i> 2 người lớn, 2 trẻ em
+                                                                                </div>
+                                                                                <div class="typeroom-detail-meta-item">
+                                                                                    <i class="fa-solid fa-house-tree"></i> Hướng vườn
+                                                                                </div>
+                                                                                <div class="typeroom-detail-meta-item">
+                                                                                    <i class="fa-solid fa-bed-front"></i> 2 gường đơn, 1 gường đôi
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="suggest-typeroom-rightselect">
+                                                                        <div class="suggest-typeroom-number">
+                                                                            <label for="">Số lượng phòng:</label>
+                                                                            <div class="input-group input-group-number">
+                                                                                <span class="input-group-btn minus-button" id="">
+                                                                                    <i class="fa-solid fa-minus"></i>
+                                                                                </span>
+                                                                                <input type="number" min="0" name="" id="quantity" placeholder="" value="0">
+                                                                                <span class="input-group-btn plus-button" id="">
+                                                                                    <i class="fa-solid fa-plus"></i>
+                                                                                </span>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="suggest-typeroom-price">
+                                                                            <span class="price-from">
+                                                                                <span class="price-new">5.000.000 Đ</span>
+                                                                            <span class="price-old"><del>7.000.000 Đ</del></span>
+                                                                            </span>
+                                                                            <div class="per-night">Phòng/đêm</div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="hotel-suggest-typeroom-item">
+                                                                    <h3 class="suggest-typeroom-title">
+                                                                        Phòng hạng sang
+                                                                    </h3>
+                                                                    <div class="suggest-typeroom-info">
+                                                                        <div class="image-box">
+                                                                            <img src="https://owa.bestprice.vn/images/hotels/large/vinpearl-resort-spa-phu-quoc-634fc56f63f9a-450x252.jpg" alt="">
+                                                                        </div>
+                                                                        <div class="desc-box">
+                                                                            <h3 class="desc-box-title">
+                                                                                Phòng thường
+                                                                            </h3>
+                                                                            <a href="" class="typeroom-detail">
+                                                                                Chi tiết phòng 
+                                                                                <i class="fa-solid fa-chevron-right"></i>
+                                                                            </a>
+                                                                            <div class="typeroom-detail-meta">
+                                                                                <div class="typeroom-detail-meta-item">
+                                                                                    <i class="fa-solid fa-square"></i> 46m <sup>2</sup>
+                                                                                </div>
+                                                                                <div class="typeroom-detail-meta-item">
+                                                                                    <i class="fa-solid fa-user"></i> 2 người lớn, 2 trẻ em
+                                                                                </div>
+                                                                                <div class="typeroom-detail-meta-item">
+                                                                                    <i class="fa-solid fa-house-tree"></i> Hướng vườn
+                                                                                </div>
+                                                                                <div class="typeroom-detail-meta-item">
+                                                                                    <i class="fa-solid fa-bed-front"></i> 2 gường đơn, 1 gường đôi
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="suggest-typeroom-rightselect">
+
+                                                                        <div class="suggest-typeroom-number">
+                                                                            <label for="">Số lượng phòng:</label>
+                                                                            <div class="input-group input-group-number">
+                                                                                <span class="input-group-btn minus-button" id="">
+                                                                                    <i class="fa-solid fa-minus"></i>
+                                                                                </span>
+                                                                                <input type="number" min="0" name="" id="quantity" placeholder="" value="0">
+                                                                                <span class="input-group-btn plus-button" id="">
+                                                                                    <i class="fa-solid fa-plus"></i>
+                                                                                </span>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="suggest-typeroom-price">
+                                                                            <span class="price-from">
+                                                                                <span class="price-new">3.000.000 Đ</span>
+                                                                            <span class="price-old"><del></del></span>
+                                                                            </span>
+                                                                            <div class="per-night">Phòng/đêm</div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="hotel-suggest-typeroom-item">
+                                                                    <h3 class="suggest-typeroom-title">
+                                                                        Phòng hạng sang
+                                                                    </h3>
+                                                                    <div class="suggest-typeroom-info">
+                                                                        <div class="image-box">
+                                                                            <img src="https://owa.bestprice.vn/images/hotels/large/vinpearl-resort-spa-phu-quoc-634fc56f63f9a-450x252.jpg" alt="">
+                                                                        </div>
+                                                                        <div class="desc-box">
+                                                                            <h3 class="desc-box-title">
+                                                                                Phòng thường
+                                                                            </h3>
+                                                                            <a href="" class="typeroom-detail">
+                                                                                Chi tiết phòng 
+                                                                                <i class="fa-solid fa-chevron-right"></i>
+                                                                            </a>
+                                                                            <div class="typeroom-detail-meta">
+                                                                                <div class="typeroom-detail-meta-item">
+                                                                                    <i class="fa-solid fa-square"></i> 46m <sup>2</sup>
+                                                                                </div>
+                                                                                <div class="typeroom-detail-meta-item">
+                                                                                    <i class="fa-solid fa-user"></i> 2 người lớn, 2 trẻ em
+                                                                                </div>
+                                                                                <div class="typeroom-detail-meta-item">
+                                                                                    <i class="fa-solid fa-house-tree"></i> Hướng vườn
+                                                                                </div>
+                                                                                <div class="typeroom-detail-meta-item">
+                                                                                    <i class="fa-solid fa-bed-front"></i> 2 gường đơn, 1 gường đôi
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="suggest-typeroom-rightselect">
+
+                                                                        <div class="suggest-typeroom-number">
+                                                                            <label for="">Số lượng phòng:</label>
+                                                                            <div class="input-group input-group-number">
+                                                                                <span class="input-group-btn minus-button" id="">
+                                                                                    <i class="fa-solid fa-minus"></i>
+                                                                                </span>
+                                                                                <input type="number" min="0" name="" id="quantity" placeholder="" value="0">
+                                                                                <span class="input-group-btn plus-button" id="">
+                                                                                    <i class="fa-solid fa-plus"></i>
+                                                                                </span>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="suggest-typeroom-price">
+                                                                            <span class="price-from">
+                                                                                <span class="price-new">3.000.000 Đ</span>
+                                                                            <span class="price-old"><del></del></span>
+                                                                            </span>
+                                                                            <div class="per-night">Phòng/đêm</div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="hotel-suggest-item">
+                                                            <div class="group-checked">
+                                                                <input type="checkbox" name="" id="hosg2">
+                                                                <label for="hosg2">
+                                                                    <div class="group-checked-info">
+                                                                        <div class="image-box">
+                                                                            <img src="https://cdn.tourradar.com/s3/city/11046/17799271_280.jpg" alt="">
+                                                                        </div>
+                                                                        <div class="desc-box">
+                                                                            <h3 class="desc-box-title">
+                                                                                Khách sạn B
+                                                                            </h3>
+                                                                            <div class="desc-box-location">
+                                                                                <i class="fa-solid fa-location-dot"></i>
+                                                                                12/24 thanh xuân,hà nội
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </label>
+                                                            </div>
+                                                            <div class="hotel-suggest-item-detail">
+                                                                <span class="ar-title">Thông tin hạng phòng</span>
+                                                                <span class="showmore-typeroom">
+                                                                    <span>Mở rộng</span>
+                                                                <i class="fa-solid fa-triangle"></i>
+                                                                </span>
+                                                            </div>
+                                                            <div class="hotel-suggest-typeroom" style="display:none">
+                                                                <div class="hotel-suggest-typeroom-item">
+                                                                    <h3 class="suggest-typeroom-title">
+                                                                        Phòng hạng sang
+                                                                    </h3>
+                                                                    <div class="suggest-typeroom-info">
+                                                                        <div class="image-box">
+                                                                            <img src="https://owa.bestprice.vn/images/hotels/large/vinpearl-resort-spa-phu-quoc-634fc56f63f9a-450x252.jpg" alt="">
+                                                                        </div>
+                                                                        <div class="desc-box">
+                                                                            <h3 class="desc-box-title">
+                                                                                Phòng hạng sang
+                                                                            </h3>
+                                                                            <a href="" class="typeroom-detail">
+                                                                                Chi tiết phòng 
+                                                                                <i class="fa-solid fa-chevron-right"></i>
+                                                                            </a>
+                                                                            <div class="typeroom-detail-meta">
+                                                                                <div class="typeroom-detail-meta-item">
+                                                                                    <i class="fa-solid fa-square"></i> 46m <sup>2</sup>
+                                                                                </div>
+                                                                                <div class="typeroom-detail-meta-item">
+                                                                                    <i class="fa-solid fa-user"></i> 2 người lớn, 2 trẻ em
+                                                                                </div>
+                                                                                <div class="typeroom-detail-meta-item">
+                                                                                    <i class="fa-solid fa-house-tree"></i> Hướng vườn
+                                                                                </div>
+                                                                                <div class="typeroom-detail-meta-item">
+                                                                                    <i class="fa-solid fa-bed-front"></i> 2 gường đơn, 1 gường đôi
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="suggest-typeroom-rightselect">
+
+                                                                        <div class="suggest-typeroom-number">
+                                                                            <label for="">Số lượng phòng:</label>
+                                                                            <div class="input-group input-group-number">
+                                                                                <span class="input-group-btn minus-button" id="">
+                                                                                    <i class="fa-solid fa-minus"></i>
+                                                                                </span>
+                                                                                <input type="number" min="0" name="" id="quantity" placeholder="" value="0">
+                                                                                <span class="input-group-btn plus-button" id="">
+                                                                                    <i class="fa-solid fa-plus"></i>
+                                                                                </span>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="suggest-typeroom-price">
+                                                                            <span class="price-from">
+                                                                                <span class="price-new">5.000.000 Đ</span>
+                                                                            <span class="price-old"><del>7.000.000 Đ</del></span>
+                                                                            </span>
+                                                                            <div class="per-night">Phòng/đêm</div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="hotel-suggest-typeroom-item">
+                                                                    <h3 class="suggest-typeroom-title">
+                                                                        Phòng hạng sang
+                                                                    </h3>
+                                                                    <div class="suggest-typeroom-info">
+                                                                        <div class="image-box">
+                                                                            <img src="https://owa.bestprice.vn/images/hotels/large/vinpearl-resort-spa-phu-quoc-634fc56f63f9a-450x252.jpg" alt="">
+                                                                        </div>
+                                                                        <div class="desc-box">
+                                                                            <h3 class="desc-box-title">
+                                                                                Phòng thường
+                                                                            </h3>
+                                                                            <a href="" class="typeroom-detail">
+                                                                                Chi tiết phòng 
+                                                                                <i class="fa-solid fa-chevron-right"></i>
+                                                                            </a>
+                                                                            <div class="typeroom-detail-meta">
+                                                                                <div class="typeroom-detail-meta-item">
+                                                                                    <i class="fa-solid fa-square"></i> 46m <sup>2</sup>
+                                                                                </div>
+                                                                                <div class="typeroom-detail-meta-item">
+                                                                                    <i class="fa-solid fa-user"></i> 2 người lớn, 2 trẻ em
+                                                                                </div>
+                                                                                <div class="typeroom-detail-meta-item">
+                                                                                    <i class="fa-solid fa-house-tree"></i> Hướng vườn
+                                                                                </div>
+                                                                                <div class="typeroom-detail-meta-item">
+                                                                                    <i class="fa-solid fa-bed-front"></i> 2 gường đơn, 1 gường đôi
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="suggest-typeroom-rightselect">
+
+                                                                        <div class="suggest-typeroom-number">
+                                                                            <label for="">Số lượng phòng:</label>
+                                                                            <div class="input-group input-group-number">
+                                                                                <span class="input-group-btn minus-button" id="">
+                                                                                    <i class="fa-solid fa-minus"></i>
+                                                                                </span>
+                                                                                <input type="number" min="0" name="" id="quantity" placeholder="" value="0">
+                                                                                <span class="input-group-btn plus-button" id="">
+                                                                                    <i class="fa-solid fa-plus"></i>
+                                                                                </span>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="suggest-typeroom-price">
+                                                                            <span class="price-from">
+                                                                                <span class="price-new">3.000.000 Đ</span>
+                                                                            <span class="price-old"><del></del></span>
+                                                                            </span>
+                                                                            <div class="per-night">Phòng/đêm</div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="hotel-suggest-more">
+                                                        <a href="javascript:;" class="hotel-suggest-morebtn btn-more mb-3">
+                                                            Thêm 
+                                                        </a>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <h3>Ăn trưa tại nhà hàng</h3><br>
+                                                    <ul class="restaurant-suggest-wrap">
+                                                        <li class="restaurant-suggest-item">
+                                                            <div class="group-checked">
+                                                                <input type="checkbox" name="" id="res1">
+                                                                <label for="res1">
+                                                                    <div class="group-checked-info">
+                                                                        <div class="image-restaurant">
+                                                                            <img src="https://cdn.tourradar.com/s3/city/11046/17799271_280.jpg" alt="">
+                                                                        </div>
+                                                                        <div class="desc-restaurant">
+                                                                            <h3 class="desc-restaurant-title">
+                                                                                Nhà hàng A
+                                                                            </h3>
+                                                                            <div class="price-tc">
+                                                                                <span>(250,000 Đ/suất)</span>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </label>
+                                                            </div>
+                                                            <div class="group-btnmore">
+                                                                <a href="" target="_blank">
+                                                                    Thông tin chi tiết
+                                                                </a>
+                                                            </div>
+                                                        </li>
+                                                        <li class="restaurant-suggest-item">
+                                                            <div class="group-checked">
+                                                                <input type="checkbox" name="" id="res2">
+                                                                <label for="res2">
+                                                                    <div class="group-checked-info">
+                                                                        <div class="image-restaurant">
+                                                                            <img src="https://cdn.tourradar.com/s3/city/11046/17799271_280.jpg" alt="">
+                                                                        </div>
+                                                                        <div class="desc-restaurant">
+                                                                            <h3 class="desc-restaurant-title">
+                                                                                Nhà hàng B
+                                                                            </h3>
+                                                                            <div class="price-tc">
+                                                                                <span>(250,000 Đ/suất)</span>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </label>
+                                                            </div>
+                                                            <div class="group-btnmore">
+                                                                <a href="" target="_blank">
+                                                                    Thông tin chi tiết
+                                                                </a>
+                                                            </div>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                                <li>
+                                                    <h3>Điểm vui chơi ban ngày</h3>
+                                                    <div class="">
+                                                        <!-- <div class="mb-2"><strong>Điểm vui chơi ban ngày:</strong></div> -->
+                                                        <div class="amusement-parks-list">
+                                                            <div class="item-ap">
+                                                                <input type="checkbox" name="" id="ap-type1">
+                                                                <label for="ap-type1">
+                                                                    <span>
+                                                                        <img src="https://cdn.tourradar.com/s3/city/11046/17799271_280.jpg" alt="" class="item-ap-image">
+                                                                    </span>
+                                                                    <span>
+                                                                        khu du lịch a 
+                                                                    <span class="price-ap">(200.000 Đ/vé)</span>
+                                                                    </span>
+                                                                </label>
+                                                            </div>
+                                                            <div class="item-ap">
+                                                                <input type="checkbox" name="" id="ap-type2">
+                                                                <label for="ap-type2">
+                                                                    <span>
+                                                                        <img src="https://cdn.tourradar.com/s3/city/11046/17799271_280.jpg" alt="" class="item-ap-image">
+                                                                    </span>
+                                                                   <span>
+                                                                    khu B
+                                                                   </span>
+                                                                </label>
+                                                            </div>
+                                                            <div class="item-ap">
+                                                                <input type="checkbox" name="" id="ap-type3">
+                                                                <label for="ap-type3">
+                                                                    <span>
+                                                                        <img src="https://cdn.tourradar.com/s3/city/11046/17799271_280.jpg" alt="" class="item-ap-image">
+                                                                    </span>
+                                                                    <span>
+                                                                        Vui chơi C
+                                                                    </span>
+                                                                </label>
+                                                            </div>
+                                                            <div class="item-ap">
+                                                                <label for="">
+                                                                    <input type="checkbox" name="ap-type" id="ap-type">
+                                                                    <span>KHu đá</span>
+                                                                </label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                </li>
+                                                <li>
+                                                    <h3>Ăn tối tại nhà hàng</h3><br>
+                                                    <ul class="restaurant-suggest-wrap">
+                                                        <li class="restaurant-suggest-item">
+                                                            <div class="group-checked">
+                                                                <input type="checkbox" name="" id="res3">
+                                                                <label for="res3">
+                                                                    <div class="group-checked-info">
+                                                                        <div class="image-restaurant">
+                                                                            <img src="https://cdn.tourradar.com/s3/city/11046/17799271_280.jpg" alt="">
+                                                                        </div>
+                                                                        <div class="desc-restaurant">
+                                                                            <h3 class="desc-restaurant-title">
+                                                                                Nhà hàng A
+                                                                            </h3>
+                                                                            <div class="price-tc">
+                                                                                <span>(250,000 Đ/suất)</span>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </label>
+                                                            </div>
+                                                            <div class="group-btnmore">
+                                                                <a href="" target="_blank">
+                                                                    Thông tin chi tiết
+                                                                </a>
+                                                            </div>
+                                                        </li>
+                                                        <li class="restaurant-suggest-item">
+                                                            <div class="group-checked">
+                                                                <input type="checkbox" name="" id="res4">
+                                                                <label for="res4">
+                                                                    <div class="group-checked-info">
+                                                                        <div class="image-restaurant">
+                                                                            <img src="https://cdn.tourradar.com/s3/city/11046/17799271_280.jpg" alt="">
+                                                                        </div>
+                                                                        <div class="desc-restaurant">
+                                                                            <h3 class="desc-restaurant-title">
+                                                                                Nhà hàng B
+                                                                            </h3>
+                                                                            <div class="price-tc">
+                                                                                <span>(250,000 Đ/suất)</span>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </label>
+                                                            </div>
+                                                            <div class="group-btnmore">
+                                                                <a href="" target="_blank">
+                                                                    Thông tin chi tiết
+                                                                </a>
+                                                            </div>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                                <li>
+                                                    <h3>Điểm vui chơi ban đêm</h3>
+                                                    <div class="">
+                                                        <!-- <div class="mb-2"><strong>Điểm vui chơi ban đêm:</strong></div> -->
+                                                        <div class="amusement-parks-list">
+                                                            <div class="item-ap">
+                                                                <input type="checkbox" name="" id="ap-type4">
+                                                                <label for="ap-type4">
+                                                                    <span>
+                                                                        <img src="https://cdn.tourradar.com/s3/city/11046/17799271_280.jpg" alt="" class="item-ap-image">
+                                                                    </span>
+                                                                    <span>
+                                                                        khu du lịch a <span class="price-ap">(200.000 Đ/vé)</span>
+                                                                    </span>
+                                                                </label>
+                                                            </div>
+                                                            <div class="item-ap">
+                                                                <input type="checkbox" name="" id="ap-type5">
+                                                                <label for="ap-type5">
+                                                                    <span>
+                                                                        <img src="https://cdn.tourradar.com/s3/city/11046/17799271_280.jpg" alt="" class="item-ap-image">
+                                                                    </span>
+                                                                    <span>
+                                                                        khu B
+                                                                    <span class="price-ap">(180.000 Đ/vé)</span>
+                                                                    </span>
+                                                                </label>
+                                                            </div>
+                                                            <div class="item-ap">
+                                                                <input type="checkbox" name="" id="ap-type6">
+                                                                <label for="ap-type6">
+                                                                    <span>
+                                                                        <img src="https://cdn.tourradar.com/s3/city/11046/17799271_280.jpg" alt="" class="item-ap-image">
+                                                                    </span>
+                                                                    <span>
+                                                                        Vui chơi C
+                                                                    <span class="price-ap">(90,000 Đ/vé)</span>
+                                                                    </span>
+                                                                    
+                                                                </label>
+                                                            </div>
+                                                            <div class="item-ap">
+                                                                <input type="checkbox" name="" id="ap-type7">
+                                                                <label for="ap-type7">
+                                                                    <span>
+                                                                        <img src="https://cdn.tourradar.com/s3/city/11046/17799271_280.jpg" alt="" class="item-ap-image">
+                                                                    </span>
+                                                                    <span>
+                                                                        Vui chơi D
+                                                                    </span>
+                                                                </label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tour-idenerary-item">
+                                    <div class="accordion-content">
+                                        <div class="accordion-content__title">
+                                            <h2>
+                                                Day2: Tham quan tại B
+                                            </h2>
+                                        </div>
+                                        <div class="accordion-content__desc">
+                                            <ul>
+                                                <li>
+                                                    <h3>Tham quan abc</h3>
+                                                </li>
+                                                <li>
+                                                    <h3>Ăn trưa tại nhà hàng</h3><br>
+                                                    <ul class="restaurant-suggest-wrap">
+                                                        <li class="restaurant-suggest-item">
+                                                            <div class="group-checked">
+                                                                <input type="checkbox" name="" id="res5">
+                                                                <label for="res5">
+                                                                    <div class="group-checked-info">
+                                                                        <div class="image-restaurant">
+                                                                            <img src="https://cdn.tourradar.com/s3/city/11046/17799271_280.jpg" alt="">
+                                                                        </div>
+                                                                        <div class="desc-restaurant">
+                                                                            <h3 class="desc-restaurant-title">
+                                                                                Nhà hàng A
+                                                                            </h3>
+                                                                        </div>
+                                                                    </div>
+                                                                </label>
+                                                            </div>
+                                                            <div class="group-btnmore">
+                                                                <a href="" target="_blank">
+                                                                    Thông tin chi tiết
+                                                                </a>
+                                                            </div>
+
+                                                        </li>
+                                                        <li class="restaurant-suggest-item">
+                                                            <div class="group-checked">
+                                                                <input type="checkbox" name="" id="res6">
+                                                                <label for="res6">
+                                                                    <div class="group-checked-info">
+                                                                        <div class="image-restaurant">
+                                                                            <img src="https://cdn.tourradar.com/s3/city/11046/17799271_280.jpg" alt="">
+                                                                        </div>
+                                                                        <div class="desc-restaurant">
+                                                                            <h3 class="desc-restaurant-title">
+                                                                                Nhà hàng B
+                                                                            </h3>
+                                                                        </div>
+                                                                    </div>
+                                                                </label>
+                                                            </div>
+                                                            <div class="group-btnmore">
+                                                                <a href="" target="_blank">
+                                                                    Thông tin chi tiết
+                                                                </a>
+                                                            </div>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                                <li>
+                                                    <h3>Kết thúc chuyến đi</h3>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-7 p-0">
+                            <div class="box-sidebar-total">
+                                <div class="total-wrap">
+                                    <h3>Chi phí người lớn (> 12 tuổi):</h3>
+                                    <div>4.000.000 (VND)</div>
+                                    <h3>Chi phí trẻ em (6-11 tuổi):</h3>
+                                    <div>2.000.000 (VND)</div>
+                                    <h3>Chi phí em bé (
+                                        < 6 tuổi):</h3>
+                                            <div>1.000.000 (VND)</div>
+                                            <hr>
+                                            <h3>Tổng tiền:</h3>
+                                            <div>7.000.000 (VND)</div>
+                                </div>
+                                <div class="form-book-calculation">
+                                    <h2 class="font-weight-bold mb-3 text-center">Thông tin khách hàng</h2>
+                                    <form action="">
+                                        <div class="form-group">
+                                            <label for="" class="form-label">Họ tên</label>
+                                            <input type="text" name="" id="" class="form-control">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="" class="form-label">Số điện thoại</label>
+                                            <input type="text" name="" id="" class="form-control">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="" class="form-label">Email</label>
+                                            <input type="email" name="" id="" class="form-control">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="" class="form-label">Ghi chú</label>
+                                            <textarea name="" id="" cols="30" rows="10" class="form-control"></textarea>
+                                        </div>
+                                        <div class="form-group">
+                                            <div class="group-button">
+                                                <button type="submit" class="btn btn-success">Đăng ký</button>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer class="footer mt-5 pt-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-7">
+                        <div class="row mb-5">
+                            <div class="col-lg-4 col-md-4">
+                                <div class="footer__link">
+                                    <h4>Giới thiệu công ty</h4>
+                                    <ul>
+                                        <li><a href="">INBOUND VIỆT NAM</a></li>
+                                        <li><a href="">Tổng quan công ty</a></li>
+                                        <li><a href="">Giấy phép kinh doanh</a></li>
+                                        <li><a href="">Ảnh văn phòng</a></li>
+                                        <li><a href="">Liên hệ</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-4">
+                                <div class="footer__link">
+                                    <h4>Chính sách</h4>
+                                    <ul>
+                                        <li><a href="">Điều khoản và điều kiện</a></li>
+                                        <li><a href="">Thông tin thanh toán</a></li>
+                                        <li><a href="">Chính sách và quy định</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-4">
+                                <div class="footer__link">
+                                    <h4>Đối tác</h4>
+                                    <ul>
+                                        <li><a href="">Shangri La</a></li>
+                                        <li><a href="">Aria Miles</a></li>
+                                        <li><a href="">Getgo</a></li>
+                                        <li><a href="">Reserve with Google</a></li>
+                                        <li><a href="">Iventure card</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-5">
+                        <div class="footer__link">
+                            <h4>Hỗ trợ 24/7</h4>
+                            <p>Hotlines Thành phố Hà Nội: <strong>0965869977</strong></p>
+                            <p>Hotlines Thành phố Hồ Chí Minh: <strong>0787320320</strong></p>
+                            <ul class="social">
+                                <li>
+                                    <a href="" class="whatsapp">
+                                        <i class="fa-brands fa-whatsapp"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="" class="facebook">
+                                        <i class="fa-brands fa-facebook-f"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="" class="youtube">
+                                        <i class="fa-brands fa-youtube"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="" class="instagram">
+                                        <i class="fa-brands fa-instagram"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__location mt-5 pt-5 pb-5 mb-5">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="office__location">
+                                <img src="./assets/images/logo-place.png" alt="">
+                                <div>
+                                    <p>Địa chỉ: Số 16 Nguyễn Văn Ngọc, phường Cống Vị, quận Ba Đình, Thành phố Hà Nội</p>
+                                    <strong>SĐT: <span>0243.5533.999</span></strong>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="office__location">
+                                <img src="./assets/images/logo-place.png" alt="">
+                                <div>
+                                    <p>Địa chỉ: Nhà số 12, Đường 17, Xã Phước Kiển, Huyện Nhà Bè, Thành phố Hồ Chí Minh</p>
+                                    <strong>SĐT: <span>028 38858668 </span></strong>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright text-center pb-5">
+                <p>Copyright © Inbound Viet Nam <img src="./assets/images/image 23.png" alt=""> Giấy phép kinh doanh lữ hành quốc tế số: 01-1761/2023/TCDL-GP LHQT</p>
+            </div>
+        </footer>
+    </div>
+
+
+    <script src="./assets/js/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js "></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-migrate/3.4.0/jquery-migrate.min.js "></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.11.8/umd/popper.min.js"></script>
+    <script src="./assets/bootstrap/js/bootstrap.min.js "></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js "></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js "></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js "></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js "></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flatpickr/4.6.13/flatpickr.min.js "></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js "></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jQuery-rwdImageMaps/1.6/jquery.rwdImageMaps.min.js"></script>
+
+    <script src="./assets/flip/flipclock.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/js/select2.min.js"></script>
+
+    <script src="./assets/js/style.js "></script>
+    <script src="./assets/js/slide.js "></script>
+    <script>
+        new WOW().init();
+    </script>
+</body>
+
+</html>

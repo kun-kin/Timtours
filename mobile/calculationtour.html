@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timtour</title>
+    <link rel="shortcut icon" type="image/x-icon" href="">
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.1.2/css/all.css">
+    <link rel="stylesheet" href="../assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flatpickr/4.6.13/flatpickr.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" />
+
+    <link rel="stylesheet" href="../assets/flip/flipclock.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/css/select2.min.css" />
+
+    <link rel="stylesheet" href="../assets/cssmobile/animation.css">
+    <link rel="stylesheet" href="../assets/cssmobile/style.css">
+    <link rel="canonical" href="https://wowjs.uk/">
+
+</head>
+
+<body id="">
+    <div class="wrapper">
+        <header class="header">
+            <div class="header-wrap">
+                <div class="container">
+                    <div class="header-top">
+                        <a href="" class="back">
+                            <i class="fa-solid fa-chevron-left"></i>
+                        </a>
+                        <a href="../mobile/index.html" class="logo">
+                            <img src="../assets/images/logo.png" alt="">
+                        </a>
+                        <div class="search-top col-6">
+                            <div class="search-top-inner">
+                                <form action="">
+                                    <input type="search" name="search" id="" placeholder="Tìm theo điểm đến hoạt động" class="form-control">
+                                    <button type="submit">
+                                        <img src="../assets/images/logo-search.svg" alt="">
+                                    </button>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="social-top">
+                            <ul>
+                                <li>
+                                    <a href="" class="whatsapp">
+                                        <i class="fa-brands fa-whatsapp"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="" class="facebook">
+                                        <i class="fa-brands fa-facebook-f"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="" class="youtube">
+                                        <i class="fa-brands fa-youtube"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="" class="instagram">
+                                        <i class="fa-brands fa-instagram"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="group-active-mobile">
+                            <div class="search-mobile">
+                                <img src="../assets/images/logo-search.png" alt="">
+                            </div>
+                            <div class="toggle-bar">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="header-nav">
+                <div class="container">
+                    <nav>
+                        <ul class="menu">
+                            <li>
+                                <a href="./about.html">Giới thiệu</a>
+                            </li>
+                            <li>
+                                <a href="./lasttour.html">Tour giờ chót</a>
+                            </li>
+                            <li>
+                                <a href="./tours.html">Tour du lịch</a>
+                            </li>
+                            <li>
+                                <a href="./flight.html">Đặt vé máy bay</a>
+                            </li>
+                            <li>
+                                <a href="./yacht.html">Du thuyền</a>
+                            </li>
+                            <li>
+                                <a href="./manual.html">Cẩm nang</a>
+                            </li>
+                            <li>
+                                <a href="./communication.html">Truyền thông</a>
+                            </li>
+                            <li>
+                                <a href="./contact.html">Liên hệ</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </header>
+        <main class="main">
+            <section class="progress-wrap">
+                <div class="container">
+                    <div class="stepper-wrapper">
+                        <div class="stepper-item completed">
+                            <div class="step-counter">1</div>
+                            <div class="step-name">Tự tính tour</div>
+                        </div>
+                        <div class="stepper-item completed">
+                            <div class="step-counter">2</div>
+                            <div class="step-name">Lịch trình tour</div>
+                        </div>
+                        <div class="stepper-item active">
+                            <div class="step-counter">3</div>
+                            <div class="step-name">Thanh toán</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <div class="calculation-tour tb-space">
+                <h1 class="text-center text-uppercase font-weight-bold title">Tự tính tour</h1>
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-md-8">
+                            <form action="./detail-calculationtour.html" class="calculation-tour-form">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label for="" class="form-label">Ngày khởi hành
+                                                <span class="require">(*)</span>
+                                            </label>
+                                            <div class="form-input">
+                                                <input type="text" name="" id="" class="form-control hasDatepicker" placeholder="Ngày khởi hành...">
+                                                <span class="icon">
+                                                    <img src="./assets/images/logo-search.png" alt="">
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label for="" class="form-label">Số người</label>
+                                            <div class="option-paxCount">
+                                                <button type="button" class="optbtn dropdown-button btn btn-text">
+                                                    <!-- <span class="allCount" id="allCount">1</span>&nbsp người <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" height="20" width="20" xmlns="http://www.w3.org/2000/svg" style="width: 18px; margin-left: 8px; margin-right: -5px;"><path d="M128 192l128 128 128-128z"></path></svg> -->
+                                                    <input type="text" class="form-control" name="" id="valueperson" value="1 người lớn">
+                                                </button>
+                                                <div class="paxCount-dropmain">
+                                                    <div class="paxCount-dropmain__inner">
+                                                        <div class="row">
+                                                            <div class="pax-count-label col">
+                                                                <div>Adult</div>
+                                                                <div><span>12+ years</span></div>
+                                                            </div>
+                                                            <div class="col">
+                                                                <button type="button" id="acm" class="btn btn-light minus-adults minus-adults--flight">
+                                                                    <i class="fa-regular fa-minus"></i>
+                                                                </button>
+                                                                <input value="1" id="input-number-adults" hidden>
+                                                                <span id="adtCount" class="number-adults"> 1 </span>
+                                                                <button type="button" id="acp" class="btn btn-light plus-adults plus-adults--flight">
+                                                                    <i class="fa-regular fa-plus"></i>
+                                                                </button>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="pax-count-label col">
+                                                                <div>Children</div>
+                                                                <div><span>6-11 years</span></div>
+                                                            </div>
+                                                            <div class="col">
+                                                                <button type="button" id="ccm" class="btn btn-light minus-chilrend minus-chilrend--flight">
+                                                                    <i class="fa-regular fa-minus"></i>
+                                                                </button>
+                                                                <input value="0" id="input-number-chilrend" hidden>
+                                                                <span id="chdCount" class="number-chilrend"> 0 </span>
+                                                                <button type="button" id="ccp" class="btn btn-light plus-chilrend plus-chilrend--flight">
+                                                                    <i class="fa-regular fa-plus"></i>
+                                                                </button>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="pax-count-label col">
+                                                                <div>Lap Infants</div>
+                                                                <div><span>Under 6 years</span></div>
+                                                            </div>
+                                                            <div class="col">
+                                                                <button type="button" id="icm" class="btn btn-light minus-infant minus-infant--flight">
+                                                                    <i class="fa-regular fa-minus"></i>
+                                                                </button>
+                                                                <input value="0" id="input-number-infant" hidden>
+                                                                <span id="infCount" class="number-infant"> 0 </span>
+                                                                <button type="button" id="icp" class="btn btn-light plus-infant plus-infant--flight">
+                                                                    <i class="fa-regular fa-plus"></i>
+                                                                </button>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="col-md-12">
+                                                                <p class="pax-count-note">Note: Customer's age must correspond with the travel date upon booking.</p>
+                                                                <button type="button" class="form-control close-done btn btn-outline-dark">Done</button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label for="" class="form-label">Điểm khởi hành</label>
+                                            <div class="form-input">
+                                                <select name="" id="" class="form-control selectpicker">
+                                                    <option value="">Chọn điểm đi</option>
+                                                    <option value="hanoi">Hà Nội</option>
+                                                    <option value="tphcm">Hồ Chí Minh</option>
+                                                </select>
+                                                <span class="icon">
+                                                    <img src="./assets/images/logo-place.png" alt="">
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label for="" class="form-label">Điểm đến</label>
+                                            <div class="form-input">
+                                                <select name="" id="" class="form-control selectpicker">
+                                                    <option value="">Chọn điểm đến</option>
+                                                    <option value="hanoi">Hà Nội</option>
+                                                    <option value="tphcm">Hồ Chí Minh</option>
+                                                </select>
+                                                <span class="icon">
+                                                    <img src="./assets/images/logo-place.png" alt="">
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <div class="form-group">
+                                            <label for="" class="form-label">Hình thức di chuyển</label>
+                                            <div class="movetype">
+                                                <div class="movetype-item">
+                                                    <input type="radio" name="movetype" id="hireservices" value="hireservices" checked>
+                                                    <label for="hireservices">Thuê dịch vụ</label>
+                                                </div>
+                                                <div class="movetype-item">
+                                                    <input type="radio" name="movetype" id="seftsufficiency" value="seftsufficiency">
+                                                    <label for="seftsufficiency">Tự túc</label>
+                                                </div>
+                                            </div>
+                                            <div id="hireservices-wrap">
+                                                <div class="wrap-check-type">
+                                                    <span>
+                                                        <input type="radio" name="hireservices-type" id="hireservices-type-plane" value="hireservices-type-plane">
+                                                        <label for="hireservices-type-plane">Máy bay</label>
+                                                    </span>
+                                                    <span>
+                                                        <input type="radio" name="hireservices-type" id="hireservices-type-train" value="hireservices-type-train">
+                                                        <label for="hireservices-type-train">Tàu</label>
+                                                    </span>
+                                                    <span>
+                                                        <input type="radio" name="hireservices-type" id="hireservices-type-car" value="hireservices-type-car">
+                                                        <label for="hireservices-type-car">Ô tô</label>
+                                                    </span>
+                                                </div>
+                                            </div>
+
+                                            <div class="choose-hireservices-list">
+                                                <div id="list-plan-airline" class="choose-hireservices-item" style="display: none;">
+                                                    <div class="choose-hireservices-list__wrap">
+                                                        <h2>Chọn hạng vé máy bay</h2>
+                                                        <table border="1" style="width: 100%;">
+                                                            <thead>
+                                                                <tr>
+                                                                    <th>Hãng</th>
+                                                                    <th>Giá vé</th>
+                                                                    <th>Hạng ghế</th>
+                                                                    <th>Số lượng</th>
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td>Vietnam Airline</td>
+                                                                    <td>1.500.000 VND</td>
+                                                                    <td>Economy Class</td>
+                                                                    <td>
+                                                                        <input type="number" min="0">
+                                                                    </td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                </div>
+                                                <div id="list-type-train" class="choose-hireservices-item" style="display: none;">
+                                                    <div class="choose-hireservices-list__wrap">
+                                                        <h2>Chọn loại ghế tàu</h2>
+                                                        <div class="wrap-check-type">
+                                                            <span>
+                                                                <input type="radio" name="train-type" id="train-type-1" value="train-type-1">
+                                                                <label for="train-type-1">Ghế mềm (700.000 VND)</label>
+                                                            </span>
+                                                            <span>
+                                                                <input type="radio" name="train-type" id="train-type-2" value="train-type-2">
+                                                                <label for="train-type-2">Ghế cứng (600.000 VND)</label>
+                                                            </span>
+                                                            <span>
+                                                                <input type="radio" name="train-type" id="train-type-3" value="train-type-3">
+                                                                <label for="train-type-3">Giường nằm (900.000 VND)</label>
+                                                            </span>
+                                                        </div>
+                                                        <div class="">
+                                                            <span><strong>Tổng vé:</strong></span>
+                                                            <span class="valuecount-trainticket">1 (vé)</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div id="list-type-car" class="choose-hireservices-item" style="display:none;">
+                                                    <div class="choose-hireservices-list__wrap">
+                                                        <h2>
+                                                            Chọn loại xe ô tô
+                                                        </h2>
+                                                        <div class="shuttletype">
+                                                            <span>Kiểu đưa đón: </span>
+                                                            <div class="wrap-check-type">
+                                                                <span>
+                                                                    <input type="radio" name="includingtour" id="alltour" value="alltour">
+                                                                    <label for="alltour">Tính cả tour</label>
+                                                                </span>
+                                                                <span>
+                                                                    <input type="radio" name="includingtour" id="twoheads" value="twoheads">
+                                                                    <label for="twoheads">Đưa đón 2 đầu</label>
+                                                                </span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="name-companycar">
+                                                            <span>Tên hãng xe: A</span>
+                                                            <div class="wrap-check-type">
+                                                                <span>
+                                                                    <input type="radio" name="car-type" id="car-type-4" value="car-type-4">
+                                                                    <label for="car-type-4">4 chỗ (1.000.000 VND)</label>
+                                                                </span>
+                                                                <span>
+                                                                    <input type="radio" name="car-type" id="car-type-7" value="car-type-7">
+                                                                    <label for="car-type-7">7 chỗ (2.000.000 VND)</label>
+                                                                </span>
+                                                                <span>
+                                                                    <input type="radio" name="car-type" id="car-type-16" value="car-type-16">
+                                                                    <label for="car-type-16">16 chỗ (3.000.000 VND)</label>
+                                                                </span>
+                                                                <span>
+                                                                    <input type="radio" name="car-type" id="car-type-45" value="car-type-45">
+                                                                    <label for="car-type-45">45 chỗ (4.000.000 VND)</label>
+                                                                </span>
+                                                            </div>
+                                                            <div class="showmore-name-companycar">
+                                                                <span class="btn btn-success btn-addmore mb-3">Hãng xe khác</span>
+                                                                <div class="showmore-name-companycar-wrap" style="display: none;">
+                                                                    <div class="showmore-name-companycar-item">
+                                                                        <span>Tên hãng xe: B</span>
+                                                                        <div class="wrap-check-type">
+                                                                            <span>
+                                                                                <input type="radio" name="car-type" id="car-type-4" value="car-type-4">
+                                                                                <label for="car-type-4">4 chỗ (1.000.000 VND)</label>
+                                                                            </span>
+                                                                            <span>
+                                                                                <input type="radio" name="car-type" id="car-type-7" value="car-type-7">
+                                                                                <label for="car-type-7">7 chỗ (2.000.000 VND)</label>
+                                                                            </span>
+                                                                            <span>
+                                                                                <input type="radio" name="car-type" id="car-type-16" value="car-type-16">
+                                                                                <label for="car-type-16">16 chỗ (3.000.000 VND)</label>
+                                                                            </span>
+                                                                            <span>
+                                                                                <input type="radio" name="car-type" id="car-type-45" value="car-type-45">
+                                                                                <label for="car-type-45">45 chỗ (4.000.000 VND)</label>
+                                                                            </span>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="showmore-name-companycar-item">
+                                                                        <span>Tên hãng xe: C</span>
+                                                                        <div class="wrap-check-type">
+                                                                            <span>
+                                                                                <input type="radio" name="car-type" id="car-type-4" value="car-type-4">
+                                                                                <label for="car-type-4">4 chỗ (1.000.000 VND)</label>
+                                                                            </span>
+                                                                            <span>
+                                                                                <input type="radio" name="car-type" id="car-type-7" value="car-type-7">
+                                                                                <label for="car-type-7">7 chỗ (2.000.000 VND)</label>
+                                                                            </span>
+                                                                            <span>
+                                                                                <input type="radio" name="car-type" id="car-type-16" value="car-type-16">
+                                                                                <label for="car-type-16">16 chỗ (3.000.000 VND)</label>
+                                                                            </span>
+                                                                            <span>
+                                                                                <input type="radio" name="car-type" id="car-type-45" value="car-type-45">
+                                                                                <label for="car-type-45">45 chỗ (4.000.000 VND)</label>
+                                                                            </span>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="">
+                                                            <span><strong>Tổng số xe:</strong></span>
+                                                            <span class="valuecount-car">1 (xe)</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="number-night-stay">
+                                            <label for="" class="form-label">Số đêm lưu trú:</label>
+                                            <input type="number" name="" id="" min="0" class="form-control" placeholder="Ví dụ: 2">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <div class="addDestination-wrap">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <a href="javascript:;" class="btn addDestination">
+                                            <i class="fa-regular fa-plus"></i>
+                                            <span>Thêm điểm đến</span>
+                                        </a>
+                                    </div>
+                                    <div class="col-md-12 text-center mt-5">
+                                        <button type="submit" class="btn btn-success">Tự tính tour</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer class="footer mt-5 pt-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-7">
+                        <div class="row mb-5">
+                            <div class="col-lg-4 col-md-4">
+                                <div class="footer__link">
+                                    <h4>Giới thiệu công ty</h4>
+                                    <ul>
+                                        <li><a href="">INBOUND VIỆT NAM</a></li>
+                                        <li><a href="">Tổng quan công ty</a></li>
+                                        <li><a href="">Giấy phép kinh doanh</a></li>
+                                        <li><a href="">Ảnh văn phòng</a></li>
+                                        <li><a href="">Liên hệ</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-4">
+                                <div class="footer__link">
+                                    <h4>Chính sách</h4>
+                                    <ul>
+                                        <li><a href="">Điều khoản và điều kiện</a></li>
+                                        <li><a href="">Thông tin thanh toán</a></li>
+                                        <li><a href="">Chính sách và quy định</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-4">
+                                <div class="footer__link">
+                                    <h4>Đối tác</h4>
+                                    <ul>
+                                        <li><a href="">Shangri La</a></li>
+                                        <li><a href="">Aria Miles</a></li>
+                                        <li><a href="">Getgo</a></li>
+                                        <li><a href="">Reserve with Google</a></li>
+                                        <li><a href="">Iventure card</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-5">
+                        <div class="footer__link">
+                            <h4>Hỗ trợ 24/7</h4>
+                            <p>Hotlines Thành phố Hà Nội: <strong>0965869977</strong></p>
+                            <p>Hotlines Thành phố Hồ Chí Minh: <strong>0787320320</strong></p>
+                            <ul class="social">
+                                <li>
+                                    <a href="" class="whatsapp">
+                                        <i class="fa-brands fa-whatsapp"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="" class="facebook">
+                                        <i class="fa-brands fa-facebook-f"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="" class="youtube">
+                                        <i class="fa-brands fa-youtube"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="" class="instagram">
+                                        <i class="fa-brands fa-instagram"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__location mt-5 pt-5 pb-5 mb-5">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="office__location">
+                                <img src="../assets/images/logo-place.png" alt="">
+                                <div>
+                                    <p>Địa chỉ: Số 16 Nguyễn Văn Ngọc, phường Cống Vị, quận Ba Đình, Thành phố Hà Nội</p>
+                                    <strong>SĐT: <span>0243.5533.999</span></strong>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="office__location">
+                                <img src="../assets/images/logo-place.png" alt="">
+                                <div>
+                                    <p>Địa chỉ: Nhà số 12, Đường 17, Xã Phước Kiển, Huyện Nhà Bè, Thành phố Hồ Chí Minh</p>
+                                    <strong>SĐT: <span>028 38858668 </span></strong>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright text-center pb-5">
+                <div class="container">
+                    <p>Copyright © Inbound Viet Nam <img src="../assets/images/image 23.png" alt="">
+                </div>
+            </div>
+        </footer>
+        <div class="menu-bottom">
+            <div class="container">
+                <ul>
+                    <li><a href=""><i class="fa-solid fa-location-dot"></i></a></li>
+                    <li><a href=""><i class="fa-solid fa-person-walking-luggage"></i></a></li>
+                    <li class="active"><a href=""><i class="fa-regular fa-house"></i></a></li>
+                    <li>
+                        <a href=""><img src="../assets/images/logo-place.png" alt=""></a>
+                    </li>
+                    <li><a href=""><i class="fa-solid fa-phone"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="../assets/jsmobile/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js "></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-migrate/3.4.0/jquery-migrate.min.js "></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.11.8/umd/popper.min.js"></script>
+    <script src="../assets/bootstrap/js/bootstrap.min.js "></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js "></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js "></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js "></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js "></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flatpickr/4.6.13/flatpickr.min.js "></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js "></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jQuery-rwdImageMaps/1.6/jquery.rwdImageMaps.min.js"></script>
+
+    <script src="../assets/flip/flipclock.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/js/select2.min.js"></script>
+
+    <script src="../assets/jsmobile/style.js "></script>
+    <script src="../assets/jsmobile/slide.js "></script>
+    <script>
+        new WOW().init();
+    </script>
+</body>
+
+</html>

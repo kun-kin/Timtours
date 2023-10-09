@@ -1,0 +1,120 @@
+/*footer*/
+
+footer {
+    border-top: 1px solid #bfbfbf;
+}
+
+.social {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.footer__link h4 {
+    font-size: 20px;
+    color: #000;
+    font-weight: 600;
+    margin-bottom: 10px;
+    @media(max-width: 480px) {
+        font-size: 1.7rem;
+    }
+}
+
+.footer__link ul li {
+    margin-bottom: 10px;
+}
+
+.footer__link ul li a {
+    font-size: 16px;
+    color: #000;
+    font-weight: 400;
+    display: inline-block;
+    @media(max-width: 480px) {
+        font-size: 1.2rem;
+    }
+}
+
+.footer__link ul li a:hover {
+    color: var(--primary-color);
+    transition: all .2s;
+}
+
+.footer__link p {
+    font-size: 20px;
+    color: #000;
+    font-weight: 400;
+    @media(max-width: 480px) {
+        font-size: 1.2rem;
+    }
+}
+
+.footer__link p strong {
+    text-decoration: underline;
+}
+
+.footer__link .social li a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 37px;
+    height: 37px;
+    color: #fff !important;
+    background-color: var(--primary-color);
+    border-radius: 50%;
+    font-size: 1.8rem;
+}
+
+.footer__location {
+    border-top: 1px solid #bfbfbf;
+    border-bottom: 1px solid #bfbfbf;
+}
+
+.office__location {
+    display: flex;
+    gap: 20px;
+}
+
+.office__location p {
+    font-size: 16px;
+    color: #000;
+    font-weight: 400;
+    @media(max-width: 480px) {
+        font-size: 1.2rem;
+    }
+}
+
+.office__location img {
+    width: auto;
+    height: 55px;
+    object-fit: cover;
+}
+
+.office__location strong {
+    font-size: 16px;
+    color: #000;
+}
+
+.office__location strong span {
+    text-decoration: underline;
+}
+
+.copyright p {
+    font-size: 20px;
+    color: #7d7d7d;
+    font-weight: 400;
+    margin-bottom: 0;
+    @media(max-width: 480px) {
+        font-size: 1.2rem;
+    }
+}
+
+.copyright img {
+    @media(max-width: 480px) {
+        width: auto;
+        height: 25px;
+        object-fit: cover;
+    }
+}
+
+
+/*end footer*/

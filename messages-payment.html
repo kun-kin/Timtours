@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timtour</title>
+    <link rel="shortcut icon" type="image/x-icon" href="">
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.1.2/css/all.css">
+    <link rel="stylesheet" href="./assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flatpickr/4.6.13/flatpickr.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" />
+
+    <link rel="stylesheet" href="./assets/flip/flipclock.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/css/select2.min.css" />
+
+    <link rel="stylesheet" href="./assets/css/animation.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="canonical" href="https://wowjs.uk/">
+    <style>
+        .messages-payment .header-wrap-messages {
+            text-align: center;
+            padding: 50px 0;
+        }
+        
+        .messages-payment .header-wrap-messages .logo {
+            max-width: 300px;
+            margin: 0 auto;
+            margin-bottom: 40px;
+        }
+        
+        @media(max-width:576px) {
+            .messages-payment .header-wrap-messages .logo {
+                max-width: 150px;
+                margin-bottom: 15px;
+            }
+        }
+        
+        .messages-payment .header-wrap-messages .logo img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        
+        .messages-payment .header-deal {
+            font-size: 20px;
+            font-weight: 700;
+            line-height: 23px;
+        }
+        
+        @media(max-width:576px) {
+            .messages-payment .header-deal {
+                font-size: 1.4rem;
+            }
+        }
+        
+        .messages-payment .header-deal p span {
+            color: var(--primary-color);
+        }
+        
+        .messages-payment .main-info-messages {
+            background-color: #f5f5f5;
+            padding: 20px 0;
+        }
+        
+        .messages-payment .main-info-messages .title-st {
+            font-size: 20px;
+            font-weight: 700;
+            line-height: 23px;
+            color: var(--primary-color);
+            margin-bottom: 30px;
+            margin-top: 15px;
+        }
+        
+        .messages-payment .main-info-messages .form-group {
+            background-color: #fff;
+            padding: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            font-size: 20px;
+        }
+        
+        .messages-payment .main-info-messages .form-group label {
+            margin-bottom: 0;
+            min-width: 200px;
+        }
+        
+        .messages-payment .main-info-messages .form-group span {
+            font-weight: 700;
+        }
+        
+        .messages-payment .main-info-messages .box-typepayment {
+            background-color: #fff;
+            padding: 20px;
+            font-size: 20px;
+        }
+        
+        .messages-payment .main-info-messages .box-typepayment .note-text {
+            border-radius: 10px;
+            border: 1px solid #FDD99B;
+            background: #FCF3DE;
+            padding: 16px 12px;
+        }
+        
+        .messages-payment .main-info-messages .box-typepayment table {
+            width: 100%;
+            margin-top: 30px;
+        }
+        
+        .messages-payment .main-info-messages .box-typepayment table th,
+        .messages-payment .main-info-messages .box-typepayment table td {
+            padding: 10px 0;
+            width: 50%;
+        }
+        
+        .messages-payment .main-info-messages .box-typepayment table td {
+            text-align: right;
+            font-weight: 700;
+        }
+        
+        .messages-payment .main-info-messages .box-typepayment .totalpay {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-top: 30px;
+        }
+        
+        .messages-payment .main-info-messages .box-typepayment .totalpay span {
+            text-align: right;
+            font-weight: 700;
+        }
+        
+        .messages-payment .footer-wrap-messages {
+            background-color: #f5f5f5;
+            padding: 50px 0;
+        }
+        
+        .messages-payment .footer-wrap-messages .text-col {
+            max-width: 650px;
+            margin: 0 auto;
+            text-align: center;
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+            margin-bottom: 30px;
+        }
+        
+        .messages-payment .footer-wrap-messages .text-col span {
+            color: var(--primary-color);
+        }
+        
+        .messages-payment .footer-wrap-messages .text-col2 {
+            color: var(--primary-color);
+        }
+        
+        .messages-payment .footer-wrap-messages .holines {
+            text-align: center;
+            font-size: 20px;
+            line-height: 23px;
+        }
+        
+        .messages-payment .footer-wrap-messages .holines a {
+            color: #000000;
+            text-decoration: underline;
+        }
+        
+        .messages-payment .footer-wrap-messages .location {
+            position: relative;
+            margin-top: 40px;
+        }
+        
+        .messages-payment .footer-wrap-messages .location .item {
+            position: relative;
+        }
+        
+        .messages-payment .footer-wrap-messages .location .item div {
+            padding-left: 40px;
+        }
+        
+        .messages-payment .footer-wrap-messages .location .item div strong {
+            margin-top: 10px;
+            display: block;
+        }
+        
+        .messages-payment .footer-wrap-messages .location .item div strong a {
+            color: #000000;
+            text-decoration: underline;
+        }
+        
+        .messages-payment .footer-wrap-messages .location .item img {
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+    </style>
+
+</head>
+
+<body id="">
+    <div class="wrapper">
+        <div class="messages-payment">
+            <div class="header-wrap-messages">
+                <div class="logo">
+                    <img src="./assets/images/logo.png" alt="">
+                </div>
+                <div class="header-deal">
+                    <p>Dear Nguyen A</p>
+                    <p>Cảm ơn quý khách đã gửi yêu cầu đến <span>Timtour</span></p>
+                </div>
+            </div>
+            <div class="main-info-messages">
+                <div class="container">
+                    <h3 class="title-st">Thông tin khách hàng</h3>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="">Khách hàng</label>
+                                <span>
+                                    Nguyen A
+                                </span>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="">Số điện thoại</label>
+                                <span>
+                                    085967564
+                                </span>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="">Email</label>
+                                <span>
+                                    nguyena@gmail.com
+                                </span>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="">Quốc tịch</label>
+                                <span>
+                                    Vietnam
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <h3 class="title-st">Thông tin gói</h3>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="form-group">
+                                <label for="">Tên gói</label>
+                                <span>Tour xuyên Việt: Thanh Hóa -Ninh Bình</span>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="">Ngày đặt</label>
+                                <span>25/08/2023</span>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="">Số lượng khách</label>
+                                <span>
+                                    <span>
+                                        1 <i class="fa-solid fa-person"></i>
+                                    </span>
+                                <span>
+                                        0 <i class="fa-solid fa-child"></i>
+                                    </span>
+                                <span>
+                                        0 <i class="fa-solid fa-baby"></i>
+                                    </span>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="">Ngày khởi hành</label>
+                                <span>02/09/2023</span>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="">Điểm khởi hành</label>
+                                <span>Hà Nội</span>
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="form-group">
+                                <label for="">Điểm đến</label>
+                                <span>Thanh Hóa - Ninh Bình</span>
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="form-group">
+                                <label for="">Tổng tiền thanh toán</label>
+                                <span>5.000.000 VNĐ</span>
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="form-group">
+                                <label for="">Yêu cầu khác</label>
+                                <span>Lorem, ipsum color sit amet consectetur adipisicing elit. Ipsam quasi alias, sunt ab expedita, accusamus omnis nemo inventore cupiditate minus laboriosam debitis commodi nesciunt reiciendis. Sit eos facere suscipit praesentium.</span>
+                            </div>
+                        </div>
+                    </div>
+                    <h3 class="title-st">Phương thức thanh toán</h3>
+                    <div class="box-typepayment">
+                        <div class="row justify-content-between">
+                            <div class="col-md-6">
+                                <div class="note-text">
+                                    <span>Quý khách đã thanh toán bằng hình thức Chuyển khoản</span>
+                                </div>
+                                <table>
+                                    <tr>
+                                        <th>Ngân hàng</th>
+                                        <td>
+                                            Vietinbank
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>Thông tin tài khoản</th>
+                                        <td>
+                                            0340289475
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>Mã đơn hàng</th>
+                                        <td>
+                                            28934duifff
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>Nội dung chuyển khoản</th>
+                                        <td>
+                                            chuyen tien mua xe
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                            <div class="col-md-4">
+                                <span>Mã QR</span>
+                                <span>
+                                    <img src="./assets/images/qrpay.png" alt="">
+                                </span>
+                                <div class="totalpay">
+                                    <label for="">Tổng tiền</label>
+                                    <span>5.000.000 VNĐ</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-wrap-messages">
+                <div class="container">
+                    <div class="text-col">
+                        Cảm ơn quý bạn đã quan tâm đến dịch vụ. Nhân viên <span>TimTour</span> sẽ liên hệ và tư vấn cho bạn
+                    </div>
+                    <div class="text-col text-col2">
+                        CHÚC BẠN CÓ NHỮNG TRẢI NGHIỆM VUI VẺ
+                    </div>
+
+                    <div class="holines">
+                        <p>
+                            Hotlines Thành phố Hà Nội:
+                            <strong>
+                                <a href="tel:+0965869977">0965869977</a>
+                            </strong>
+                        </p>
+                        <p>
+                            Hotlines Thành phố Hồ Chí Minh:
+                            <strong>
+                                <a href="tel:+0787320320">0787320320</a>
+                            </strong>
+                        </p>
+                    </div>
+                    <div class="location">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="item">
+                                    <img src="./assets/images/logo-place.png" alt="">
+                                    <div>
+                                        Địa chỉ: Số 16 Nguyễn Văn Ngọc, phường Cống Vị, quận Ba Đình, Thành phố Hà Nội
+                                        <br>
+                                        <strong>
+                                            SĐT: <a href="tel:+02435533999">02435533999</a>
+                                        </strong>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="item">
+                                    <img src="./assets/images/logo-place.png" alt="">
+                                    <div>
+                                        Địa chỉ: Nhà số 12, Đường 17, Xã Phước Kiển, Huyện Nhà Bè, Thành phố Hồ Chí Minh
+                                        <br>
+                                        <strong>
+                                            SĐT: <a href="tel:+02838858668">02838858668</a>
+                                        </strong>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="./assets/js/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js "></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-migrate/3.4.0/jquery-migrate.min.js "></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.11.8/umd/popper.min.js"></script>
+    <script src="./assets/bootstrap/js/bootstrap.min.js "></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js "></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js "></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js "></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js "></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flatpickr/4.6.13/flatpickr.min.js "></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js "></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jQuery-rwdImageMaps/1.6/jquery.rwdImageMaps.min.js"></script>
+
+    <script src="./assets/flip/flipclock.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/js/select2.min.js"></script>
+
+    <script src="./assets/js/style.js "></script>
+    <script src="./assets/js/slide.js "></script>
+    <script>
+        new WOW().init();
+    </script>
+</body>
+
+</html>
